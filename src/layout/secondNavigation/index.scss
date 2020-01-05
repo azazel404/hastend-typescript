@@ -1,0 +1,38 @@
+//default transition
+$default-transition: .2s ease-out;
+//default border radius
+$default-border-radius: 4px;
+$product-color : black;
+
+ .second-sidenav{
+        width: 240px;
+        overflow: hidden;
+        height: 100%;
+        transition: $default-transition;
+
+        .customer-logo{
+            background-color: #fff ;
+            border-bottom: 1px solid #BDC3CA;
+            width: 240px;
+            height: 58px;
+            padding: 16px 28px;
+            font-size: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            color: #172436;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+
+        .sidenav-menu{
+            position: relative;
+            width: 240px;
+            height: calc(100% - 58px);
+            overflow-Y: auto;
+        }
+    }
+    
+    .second-sidenav-16 {
+        width: 16px;
+    }

@@ -1,0 +1,66 @@
+//default transition
+$default-transition: .2s ease-out;
+//default border radius
+$default-border-radius: 4px;
+$product-color : blue;
+
+.first-sidenav{
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        width: 60px;
+        height: 100vh;
+        overflow: auto;
+     
+
+        .first-sidenav-app-logo{
+            height: 58px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3px;
+            
+            .app-logo-placeholder{
+                width: 32px;
+                height: 32px;
+                font-size: 20px;
+                line-height: 32px;
+                color: #fff;
+                background-color: $product-color;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+
+        .first-sidenav-icon-menu{
+            min-height: calc(100vh - 120px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            .first-sidenav-icon-menu-top,
+            .first-sidenav-icon-menu-bottom{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+
+                .material-icons{
+                    margin: 5px auto;
+                    color: rgba($color: #fff , $alpha: 0.8);
+                }
+            }
+        }
+
+        .first-sidenav-avatar{
+            height: 58px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+           
+        }
+    }

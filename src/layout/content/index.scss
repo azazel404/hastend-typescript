@@ -1,0 +1,100 @@
+//default transition
+$default-transition: .2s ease-out;
+
+//default border radius
+$default-border-radius: 4px;
+
+
+.content-wrapper{
+    position: relative;
+    padding-left: 300px;
+    z-index: 1;
+    transition: $default-transition;
+    
+    .content-breadcrumbs {
+        min-height: calc(100vh - 575px);
+        margin: auto;
+    }
+
+    .content-container{
+        min-height: calc(100vh - 90px);
+        margin: auto;
+
+        .content-header{
+            background: #fff;
+            height: 58px;
+            box-shadow: 0px 1px 3px rgba($color: black, $alpha: 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            z-index: 2;
+        }
+    }
+
+    .footer{
+        position: relative;
+        min-height: 58px;
+        text-align: right;
+        font-size: 14px;
+    }
+}
+
+.content-wrapper-60 {
+    padding-left: 76px;
+}
+
+.layout-padding{
+    padding: 16px 28px;
+}
+
+.layout-padding-breadcrumbs{
+      padding: 20px 28px;
+}
+
+@media screen and (max-width: 480px){
+    .content-wrapper,
+    .content-wrapper-60{
+        padding-left: 0px;
+
+        .content-container{
+            .content-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .content{
+                padding-top: 74px;
+            }
+        }
+    }
+
+    .layout-padding{
+        padding: 16px;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    *{
+        box-sizing: border-box;
+    }
+}
+  
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+  
+h1, h2, h3, h4, h5, h6, p, li, a {
+color: #172436;
+}

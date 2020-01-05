@@ -1,0 +1,16 @@
+    .footer{
+        position: relative;
+        min-height: 58px;
+        text-align: right;
+        font-size: 14px;
+    }
+
+    .layout-padding{
+    padding: 16px 28px;
+    }
+
+@media screen and (max-width: 480px){
+    .layout-padding{
+        padding: 16px;
+    }
+}
